@@ -27,7 +27,7 @@
  <Param name="MTK_FM_SUPPORT" value="yes" />
  <Param name="MTK_HEADSET_ACTIVE_NOISE_CANCELLATION" value="" />
  <Param name="MTK_SUPPORT_TC1_TUNNING" value="" />
- <Param name="MTK_AUDIO_SPEAKER_PATH" value="smartpa_cirrus_cs35l35" />
+ <Param name="MTK_AUDIO_SPEAKER_PATH" value="int_lo_buf" />
  <Param name="MTK_AUDIO_NUMBER_OF_MIC" value="2" />
  <Param name="MTK_PLATFORM" value="mt6768" />
  <Param name="MTK_AURISYS_FRAMEWORK_SUPPORT" value="yes" />
@@ -61,12 +61,11 @@
  <Param name="VIR_MTK_RECORD_IIR_ENH_SUPPORT" value="yes" />
  <Param name="VIR_MTK_VOIP_IIR_ENH_SUPPORT" value="yes" />
  <Param name="VIR_MTK_VOIP_IIR_MIC_SUPPORT" value="yes" />
- <Param name="MTK_USB_PHONECALL" value="yes" />
  <Param name="SPH_PARAM_VERSION" value="2.0" />
  <Param name="CUST_XML_DIR" value="/data/vendor/audiohal/audio_param/" />
  <Param name="5_POLE_HS_SUPPORT" value="" />
  <Param name="VIR_MTK_USB_PHONECALL" value="yes" />
- <Param name="SPK_PATH_NO_ANA" value="yes" />
+ <Param name="SPK_PATH_LO" value="yes" />
  <Param name="RCV_PATH_INT" value="yes" />
  <Param name="SPH_PARAM_TTY" value="yes" />
  <Param name="FIX_WB_ENH" value="yes" />

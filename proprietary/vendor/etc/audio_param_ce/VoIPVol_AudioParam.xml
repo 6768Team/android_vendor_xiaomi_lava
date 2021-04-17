@@ -9,10 +9,10 @@
     <Param path="HS5POLE" param_id="4"/>
     <Param path="HS5POLE_ANC" param_id="4"/>
     <Param path="USB" param_id="1"/>
-    <Param path="Default,RCV" param_id="7"/>
-    <Param path="Default,HAC" param_id="7"/>
-    <Param path="Default,HP" param_id="28"/>
-    <Param path="Default,HS" param_id="28"/>
+    <Param path="Default,RCV" param_id="20"/>
+    <Param path="Default,HAC" param_id="20"/>
+    <Param path="Default,HP" param_id="8"/>
+    <Param path="Default,HS" param_id="8"/>
     <Param path="Default,SPK" param_id="10"/>
     <Param path="Default,USB" param_id="3"/>
   </ParamTree>
@@ -39,19 +39,19 @@
     </ParamUnit>
     <ParamUnit param_id="10">
       <Param name="dl_gain" value="23,21,19,17,15,13,11,9,7,5,3"/>
-      <Param name="ul_gain" value="25"/>
+      <Param name="ul_gain" value="27"/>
     </ParamUnit>
     <ParamUnit param_id="3">
-      <Param name="dl_gain" value="20,18,16,14,12,10,8,6,4,2,0"/>
+      <Param name="dl_gain" value="30,27,24,21,18,15,12,9,6,3,0"/>
       <Param name="ul_gain" value="34"/>
     </ParamUnit>
-    <ParamUnit param_id="28">
-      <Param name="dl_gain" value="34,31,28,25,22,19,16,13,10,7,4"/>
-      <Param name="ul_gain" value="29"/>
+    <ParamUnit param_id="20">
+      <Param name="dl_gain" value="22,20,18,16,14,12,10,8,6,4,2"/>
+      <Param name="ul_gain" value="19"/>
     </ParamUnit>
-    <ParamUnit param_id="7">
-      <Param name="dl_gain" value="20,18,16,14,12,10,8,6,4,2,0"/>
-      <Param name="ul_gain" value="17"/>
+    <ParamUnit param_id="8">
+      <Param name="dl_gain" value="24,22,20,18,16,14,12,10,8,6,4"/>
+      <Param name="ul_gain" value="30"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>

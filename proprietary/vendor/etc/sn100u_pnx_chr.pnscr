@@ -1,10 +1,7 @@
-reset 0
-reset 1
-interval 50
-
 # core_reset_ntf
-trigger 60000A020120040500A40110
+trigger 400119
 # core_reset_rsp
-trigger 40000100
+trigger 400003
 # core reset
 send 20000101
+sleep 100

@@ -61,6 +61,9 @@
     <Param path="Default,VR,Headset" param_id="10"/>
     <Param path="Default,Camera recording,USB" param_id="11"/>
     <Param path="Default,VR,USB" param_id="12"/>
+    <Param path="Default,FastRecord,Headset" param_id="13"/>
+    <Param path="Default,FastRecord,Handset" param_id="14"/>
+    <Param path="Default,VR,Handset" param_id="15"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
@@ -82,25 +85,34 @@
       <Param name="ul_gain" value="0"/>
     </ParamUnit>
     <ParamUnit param_id="6">
-      <Param name="ul_gain" value="27"/>
+      <Param name="ul_gain" value="31"/>
     </ParamUnit>
     <ParamUnit param_id="7">
-      <Param name="ul_gain" value="32"/>
+      <Param name="ul_gain" value="34"/>
     </ParamUnit>
     <ParamUnit param_id="8">
       <Param name="ul_gain" value="29"/>
     </ParamUnit>
     <ParamUnit param_id="9">
-      <Param name="ul_gain" value="31"/>
+      <Param name="ul_gain" value="34"/>
     </ParamUnit>
     <ParamUnit param_id="10">
-      <Param name="ul_gain" value="34"/>
+      <Param name="ul_gain" value="32"/>
     </ParamUnit>
     <ParamUnit param_id="11">
       <Param name="ul_gain" value="0"/>
     </ParamUnit>
     <ParamUnit param_id="12">
       <Param name="ul_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="13">
+      <Param name="ul_gain" value="32"/>
+    </ParamUnit>
+    <ParamUnit param_id="14">
+      <Param name="ul_gain" value="30"/>
+    </ParamUnit>
+    <ParamUnit param_id="15">
+      <Param name="ul_gain" value="30"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>
