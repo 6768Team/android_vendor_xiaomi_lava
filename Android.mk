@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),lancelot)
+ifeq ($(TARGET_DEVICE),lava)
 
 endif
