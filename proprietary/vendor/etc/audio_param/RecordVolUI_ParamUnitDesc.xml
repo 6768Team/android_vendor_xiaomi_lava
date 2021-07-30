@@ -24,6 +24,7 @@
 			<Category name="CUSTOMIZATION3"/>
 			<Category name="FastRecord" visible="true"/>
 			<Category name="Unprocessed"/>
+			<Category name="IncallRecord"/>
 		</CategoryType>
 		<CategoryType name="Profile" wording="Device">
 			<Category name="Handset"/>

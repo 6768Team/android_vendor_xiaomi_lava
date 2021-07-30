@@ -228,6 +228,8 @@
     <string name="finger_alipay_ifaa_model">Xiaomi-lancelot</string>
     <!-- type of soter finger pay, config by owner of soter -->
     <integer name="type_soter_finger_pay">2</integer>
+    <!-- finger record, config by owner -->
+    <integer name="type_mqs_finger_record">3</integer>
     <!-- whether support double tap to wake up device -->
     <bool name="support_gesture_wakeup">true</bool>
     <!--Led light features-->
@@ -381,6 +383,4 @@
     <integer name="ifaa_2dfa_support">1</integer>
     <!-- whether support hangup while screen turnning off -->
     <bool name="support_hangup_while_screen_off">true</bool>
-    <!-- Whether support sunlight mode -->
-    <bool name="config_sunlight_mode_available">true</bool>
 </features>
