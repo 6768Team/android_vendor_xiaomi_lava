@@ -144,30 +144,44 @@
     <Param path="Assistant,BT_A2DP_HP" param_id="0"/>
     <Param path="Assistant,BT_A2DP_SPK" param_id="0"/>
     <Param path="Assistant,HEARING_AID" param_id="1"/>
-    <Param path="Default,Music,SPK" param_id="2"/>
-    <Param path="Default,System,SPK" param_id="3"/>
-    <Param path="Default,System,HS" param_id="4"/>
-    <Param path="Default,Music,HS" param_id="5"/>
-    <Param path="Default,System,USB" param_id="6"/>
-    <Param path="Default,Ring,USB" param_id="7"/>
-    <Param path="Default,Music,USB" param_id="8"/>
-    <Param path="Default,Alarm,USB" param_id="9"/>
-    <Param path="Default,System,BT_A2DP" param_id="23"/>
-    <Param path="Default,System,BT_A2DP_HP" param_id="23"/>
-    <Param path="Default,System,BT_A2DP_SPK" param_id="23"/>
-    <Param path="Default,Ring,BT_A2DP" param_id="37"/>
-    <Param path="Default,Ring,BT_A2DP_HP" param_id="37"/>
-    <Param path="Default,Ring,BT_A2DP_SPK" param_id="37"/>
-    <Param path="Default,Music,BT_A2DP" param_id="51"/>
-    <Param path="Default,Music,BT_A2DP_HP" param_id="51"/>
-    <Param path="Default,Music,BT_A2DP_SPK" param_id="51"/>
-    <Param path="Default,Alarm,BT_A2DP" param_id="65"/>
-    <Param path="Default,Alarm,BT_A2DP_HP" param_id="65"/>
-    <Param path="Default,Alarm,BT_A2DP_SPK" param_id="65"/>
-    <Param path="Default,Notification,BT_A2DP" param_id="79"/>
-    <Param path="Default,Notification,BT_A2DP_HP" param_id="79"/>
-    <Param path="Default,Notification,BT_A2DP_SPK" param_id="79"/>
-    <Param path="Default,Notification,USB" param_id="80"/>
+    <Param path="Default,System,BT_A2DP" param_id="122"/>
+    <Param path="Default,System,BT_A2DP_HP" param_id="122"/>
+    <Param path="Default,System,BT_A2DP_SPK" param_id="122"/>
+    <Param path="Default,Ring,BT_A2DP" param_id="270"/>
+    <Param path="Default,Ring,BT_A2DP_HP" param_id="270"/>
+    <Param path="Default,Ring,BT_A2DP_SPK" param_id="270"/>
+    <Param path="Default,Music,BT_A2DP" param_id="429"/>
+    <Param path="Default,Music,BT_A2DP_HP" param_id="429"/>
+    <Param path="Default,Music,BT_A2DP_SPK" param_id="429"/>
+    <Param path="Default,Alarm,BT_A2DP" param_id="456"/>
+    <Param path="Default,Alarm,BT_A2DP_HP" param_id="456"/>
+    <Param path="Default,Alarm,BT_A2DP_SPK" param_id="456"/>
+    <Param path="Default,Notification,BT_A2DP" param_id="507"/>
+    <Param path="Default,Notification,BT_A2DP_HP" param_id="507"/>
+    <Param path="Default,Notification,BT_A2DP_SPK" param_id="507"/>
+    <Param path="Default,System,HS" param_id="508"/>
+    <Param path="Default,Music,HS" param_id="509"/>
+    <Param path="Default,Notification,HS" param_id="510"/>
+    <Param path="Default,Bluetooth_sco,HS" param_id="511"/>
+    <Param path="Default,Enforced_Audible,HS" param_id="512"/>
+    <Param path="Default,DTMF,HS" param_id="513"/>
+    <Param path="Default,TTS,HS" param_id="514"/>
+    <Param path="Default,Accessibility,HS" param_id="515"/>
+    <Param path="Default,Assistant,HS" param_id="516"/>
+    <Param path="Default,System,SPK" param_id="517"/>
+    <Param path="Default,Music,SPK" param_id="518"/>
+    <Param path="Default,Notification,SPK" param_id="519"/>
+    <Param path="Default,Bluetooth_sco,SPK" param_id="520"/>
+    <Param path="Default,Enforced_Audible,SPK" param_id="521"/>
+    <Param path="Default,DTMF,SPK" param_id="522"/>
+    <Param path="Default,TTS,SPK" param_id="523"/>
+    <Param path="Default,Accessibility,SPK" param_id="524"/>
+    <Param path="Default,Assistant,SPK" param_id="525"/>
+    <Param path="Default,System,USB" param_id="526"/>
+    <Param path="Default,Ring,USB" param_id="527"/>
+    <Param path="Default,Music,USB" param_id="528"/>
+    <Param path="Default,Alarm,USB" param_id="529"/>
+    <Param path="Default,Notification,USB" param_id="530"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
@@ -176,46 +190,88 @@
     <ParamUnit param_id="1">
       <Param name="digital_gain" value="-48,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
     </ParamUnit>
-    <ParamUnit param_id="2">
-      <Param name="digital_gain" value="-64,-48,-43,-38,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    <ParamUnit param_id="122">
+      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
     </ParamUnit>
-    <ParamUnit param_id="3">
+    <ParamUnit param_id="270">
+      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="429">
+      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="456">
+      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="507">
+      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="508">
       <Param name="digital_gain" value="-64,-50,-47,-44,-41,-38,-35,-32,-29,-26,-23,-20,-17,-14,-11,-8"/>
     </ParamUnit>
-    <ParamUnit param_id="4">
-      <Param name="digital_gain" value="-64,-50,-47,-44,-41,-38,-35,-32,-29,-26,-23,-20,-17,-14,-11,-8"/>
-    </ParamUnit>
-    <ParamUnit param_id="5">
+    <ParamUnit param_id="509">
       <Param name="digital_gain" value="-64,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-9,-6,-3,0"/>
     </ParamUnit>
-    <ParamUnit param_id="6">
+    <ParamUnit param_id="510">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="511">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="512">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="513">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="514">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="515">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="516">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="517">
+      <Param name="digital_gain" value="-64,-50,-47,-44,-41,-38,-35,-32,-29,-26,-23,-20,-17,-14,-11,-8"/>
+    </ParamUnit>
+    <ParamUnit param_id="518">
+      <Param name="digital_gain" value="-64,-48,-43,-38,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="519">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="520">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="521">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="522">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="523">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="524">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="525">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="526">
       <Param name="digital_gain" value="-64,-59,-54,-49,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
     </ParamUnit>
-    <ParamUnit param_id="7">
+    <ParamUnit param_id="527">
       <Param name="digital_gain" value="-64,-59,-54,-49,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
     </ParamUnit>
-    <ParamUnit param_id="8">
+    <ParamUnit param_id="528">
       <Param name="digital_gain" value="-64,-59,-54,-49,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
     </ParamUnit>
-    <ParamUnit param_id="9">
-      <Param name="digital_gain" value="-64,-59,-54,-49,-44,-40,0,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
+    <ParamUnit param_id="529">
+      <Param name="digital_gain" value="-64,-59,-54,-49,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
     </ParamUnit>
-    <ParamUnit param_id="23">
-      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="37">
-      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="51">
-      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="65">
-      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="79">
-      <Param name="digital_gain" value="-64,-56,-52,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="80">
+    <ParamUnit param_id="530">
       <Param name="digital_gain" value="-64,-59,-54,-49,-44,-40,-36,-32,-28,-24,-20,-16,-12,-8,-4,0"/>
     </ParamUnit>
   </ParamUnitPool>

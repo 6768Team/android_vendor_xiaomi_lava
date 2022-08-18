@@ -200,11 +200,6 @@
       addr="supl.qxwz.com"
       port="7275"
       tls="true"
-      mcc="460"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
   />
 
   <!-- Telstra -->
@@ -275,28 +270,6 @@
   />
 
   <!-- Iusacell (ATT Mexico) -->
-  <supl_profile name="ATT Mexico 1"
-      addr="supl.attmex.mx"
-      port="7275"
-      tls="true"
-      mcc_mnc="334050"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-  />
-
-  <!-- NEXTEL (ATT Mexico) -->
-  <supl_profile name="ATT Mexico 2"
-      addr="supl.attmex.mx"
-      port="7275"
-      tls="true"
-      mcc_mnc="334090"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-  />
-
-  <!-- Iusacell (ATT Mexico) -->
   <supl_profile name="Iusacell (ATT Mexico)"
       addr="supl.attmex.mx"
       port="7275"
@@ -340,57 +313,6 @@
       port="7275"
       tls="true"
   />
-  <!-- Claro Columbia -->
-  <supl_profile
-      name="Claro_CO"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="732101"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
-  />
-
-  <!-- Claro Peru -->
-  <supl_profile
-      name="Claro_PE"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="71610"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
-  />
-
-  <!-- Entel Peru -->
-  <supl_profile
-      name="Entel_PE"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="71617"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
-  />
-
-  <!-- Movistar Peru -->
-  <supl_profile
-      name="Movistar_PE"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="71606"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
-  />
 
   <!-- Test 1 -->
   <supl_profile name="Test 1"
@@ -425,67 +347,6 @@
       supl_version="1"
       tls_version="2"
       sha_version="1"
-  />
-
-  <!--Peru. Auto config HSLP based on IMSI -->
-  <supl_profile name="Entel"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc="716"
-      supl_version="2"
-  />
-
-  <!-- Claro Columbia -->
-  <supl_profile
-      name="Claro_CO"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="732101"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
-  />
-
-  <!-- Claro Peru -->
-  <supl_profile
-      name="Claro_PE"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="71610"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
-  />
-
-  <!-- Entel Peru -->
-  <supl_profile
-      name="Entel_PE"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="71617"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
-  />
-
-  <!-- Movistar Peru -->
-  <supl_profile
-      name="Movistar_PE"
-      addr=""
-      port="7275"
-      tls="true"
-      mcc_mnc="71606"
-      supl_version="2"
-      tls_version="1"
-      sha_version="0"
-      esupl_apn_mode="3"
   />
 
   <!-- nlp_profile
@@ -655,16 +516,16 @@
     e911_open_gps="false"
     tc10_ignore_fw_config="false"
     lppe_network_location_disable="false"
-    agps_nvram_enable="true"
+    agps_nvram_enable="false"
     lbs_log_enable="false"
     lppe_crowd_source_confident="90"
     ignore_si_for_e911="false"
     ignore_emergency_ext_secs_from_framework="false"
     lppe_dbh_num_sv_level_a="6"
     lppe_dbh_num_sv_level_b="4"
-    lppe_dbh_nlp_accuracy_level_a="100"
-    lppe_dbh_nlp_accuracy_level_b="200"
-    lppe_dbh_cache_max_age="120"
+    lppe_dbh_nlp_accuracy_level_a="2000"
+    lppe_dbh_nlp_accuracy_level_b="2000"
+    lppe_dbh_cache_max_age="1024"
     lppe_dbh_fill_gnss_when_bad_nlp_enable="false"
   />
 
@@ -691,7 +552,7 @@
   <gnss_setting
     sib8_16_enable="true"
     a_glonass_satellite_enable="true"
-    a_beidou_satellite_enable="false"
+    a_beidou_satellite_enable="true"
     a_galileo_satellite_enable="true"
   />
 
@@ -1071,7 +932,7 @@
 
   -->
   <up_setting
-    ca_enable="false"
+    ca_enable="true"
     ni_request="true"
     roaming="true"
     cdma_preferred="0"
@@ -1260,25 +1121,9 @@
       v1="71610"
     />
   </carrier_mapping>
-    <carrier_mapping name="Movistar_Peru">
-    <mcc_mnc
-      v1="71606"
-    />
-  </carrier_mapping>
-    <carrier_mapping name="Claro_Columbia">
-    <mcc_mnc
-      v1="732101"
-    />
-  </carrier_mapping>
   <carrier_mapping name="Entel_Peru">
     <mcc_mnc
       v1="71617"
-    />
-  </carrier_mapping>
-  <carrier_mapping name="CT">
-    <mcc_mnc
-      v1="46011"
-      v2="46003"
     />
   </carrier_mapping>
 </mtk_agps_profiles>

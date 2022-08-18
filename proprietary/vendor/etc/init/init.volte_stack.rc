@@ -3,8 +3,9 @@
 
 service vendor.volte_stack /vendor/bin/volte_stack
     class main
-    socket volte_stack stream 660 root system
-    user root
+    socket volte_stack stream 660 system system
+    user system
     group system log inet radio
+    capabilities NET_ADMIN
     oneshot
     disabled

@@ -4,10 +4,11 @@
 
 service wfca /vendor/bin/wfca
     class core
-    socket wfca stream 660 root system
-    socket wfca_rds stream 660 root system
-    user root
-    group system log inet radio net_admin root
+    socket wfca stream 660 system system
+    socket wfca_rds stream 660 system system
+    user system
+    group system log inet radio net_raw net_admin
+    capabilities NET_RAW NET_ADMIN
 
 #
 ## WFCA related services (End)

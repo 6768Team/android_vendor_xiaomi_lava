@@ -7,7 +7,7 @@ on init
 
 service volte_md_status /system/vendor/bin/volte_md_status
     class core
-    user root
+    user system
     group radio log system
     oneshot
     disabled

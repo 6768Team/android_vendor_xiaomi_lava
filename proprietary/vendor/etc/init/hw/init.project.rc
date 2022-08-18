@@ -1,6 +1,8 @@
 # MTK project .rc configure
 import /vendor/odm/etc/${ro.boot.product.hardware.sku}/vendor.nxp.hardware.nfc@1.2-service_lancelot.rc
+#import /vendor/odm/etc/${ro.boot.product.hardware.sku}/android.hardware.nfc@1.0-service.rc
 import /vendor/odm/etc/${ro.boot.product.hardware.sku}/android.hardware.secure_element@1.2-service-mediatek.rc
+
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
@@ -38,6 +40,7 @@ on post-fs-data
 #dual calib
     chmod 0777 /mnt/vendor/persist/camera/rear_dc_cal_wd.bin
     chmod 0777 /data/vendor/camera/rear_dc_cal_wd.bin
+
 
 #XIAOMI_AI_ASD
     mkdir /data/misc/camera 0777 system camera
@@ -123,10 +126,11 @@ service mmc_ffu_micron /vendor/bin/mmc_ffu_micron do /vendor/bin/Turquoise_FW_Ve
 on boot
     setprop vendor.debug.camera.enableMetaPending 0
     setprop vendor.debug.camera.enableMetaMerge 0
-
+#J15S code for HQ-181209 by huohaotian at 2022/03/02 start
 service service_nv_protect /vendor/bin/misc_writer --nv_protect
     disabled
     oneshot
 
 on property:vendor.service_nv_protect=start
     start service_nv_protect
+#J15S code for HQ-181209 by huohaotian at 2022/03/02 end

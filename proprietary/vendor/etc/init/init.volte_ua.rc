@@ -2,9 +2,9 @@
 
 service vendor.volte_ua /vendor/bin/volte_ua
     class main
-    socket volte_ua stream 660 root system
-    user root
-    group system log inet radio net_admin root
+    socket volte_ua stream 660 system system
+    user radio
+    group system log inet radio net_admin
     oneshot
     disabled
 

@@ -1,6 +1,6 @@
 on boot
      setprop ro.vendor.md_apps.support 1
      setprop ro.vendor.md_apps.load_type user
-     setprop ro.vendor.md_apps.load_verno "MOLY.LR12A.R3.MP.V98.P85"
+     setprop ro.vendor.md_apps.load_verno "MOLY.LR12A.R3.MP.V98.1.P21"
      setprop ro.vendor.md_apps.load_gencfg "GEN93_USER"
-     setprop ro.vendor.md_apps.load_date "2021/06/05 11:16:29 GMT +08:00"
+     setprop ro.vendor.md_apps.load_date "2022/06/20 12:52:51 GMT +08:00"

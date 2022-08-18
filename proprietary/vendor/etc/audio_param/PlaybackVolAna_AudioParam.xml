@@ -27,9 +27,9 @@
     <Param path="Notification,HEARING_AID" param_id="5"/>
     <Param path="Default,Others,HS" param_id="6"/>
     <Param path="Default,Notification,HS" param_id="7"/>
-    <Param path="Default,Notification,SPK" param_id="8"/>
-    <Param path="Default,Ring_Alarm,SPK" param_id="9"/>
-    <Param path="Default,Others,SPK" param_id="10"/>
+    <Param path="Default,Others,SPK" param_id="8"/>
+    <Param path="Default,Notification,SPK" param_id="9"/>
+    <Param path="Default,Ring_Alarm,SPK" param_id="10"/>
     <Param path="Default,Ring_Alarm,HSSPK" param_id="11"/>
     <Param path="Default,Notification,HSSPK" param_id="12"/>
   </ParamTree>

@@ -50,8 +50,9 @@ on property:vendor.volte_md_status=exception
 
 service volte_imsm_93 /vendor/bin/volte_imsm_93
     class main
-    user root
-    group radio cache inet misc log system wifi
+    user system
+    group radio cache inet misc log system wifi net_raw
+    capabilities NET_RAW NET_ADMIN
     oneshot
     disabled
 

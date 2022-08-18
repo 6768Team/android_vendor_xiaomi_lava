@@ -4,23 +4,26 @@
        cur_supl_profile is supported but other supl_profile are ignored.
        auto_profile_enable is not supported.
   -->
-<!--J19/J15S code for HQ-130850 by fenghaitao at 2021/4/23 start-->
+
+<!-- J15S&J19-S code for HQ-130885 by luziyang at 2022.1.6 start -->
   <!--
   <cur_supl_profile name="ATnT_Mexico"
-      addr="supl.iusacell.com"
+      addr="supl.attmex.mx"
       port="7275"
       tls="true"
   />
   -->
-    <cur_supl_profile name="ATnT_Mexico"
-      addr="supl.iusacell.com"
+
+  <cur_supl_profile name="ATnT_Mexico"
+      addr="supl.attmex.mx"
       port="7275"
       tls="true"
       supl_version="2"
       tls_version="1"
       sha_version="0"
   />
-<!--J19/J15S code for HQ-130850 by fenghaitao at 2021/4/23 end-->
+<!-- J15S&J19-S code for HQ-130885 by luziyang at 2022.1.6 end -->
+
   <cdma_profile name="CDMA1"
   />
 

@@ -26,10 +26,15 @@
                 Ex: 460 FFF means all operators in China
     -->
 
+    <!-- Add for Vodafone/Ireland operators -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="272 01"/>
+
     <!-- Add for Myanmar due to AOSP eccdata will treat it as ecc -->
-    <EccEntry Ecc="191" Category="0" Condition="2" Plmn="414 FFF"/>
-    <EccEntry Ecc="192" Category="0" Condition="2" Plmn="414 FFF"/>
-    <EccEntry Ecc="199" Category="0" Condition="2" Plmn="414 FFF"/>
+    <!-- J15S code for HQ-206679 by yefeng at 20220505 start -->
+    <EccEntry Ecc="191" Category="4" Condition="2" Plmn="414 FFF"/>
+    <EccEntry Ecc="192" Category="2" Condition="2" Plmn="414 FFF"/>
+    <EccEntry Ecc="199" Category="1" Condition="2" Plmn="414 FFF"/>
+    <!-- J15S code for HQ-206679 by yefeng at 20220505 end -->
 
     <!-- Add for Japan KDDI operator -->
     <EccEntry Ecc="184110" Category="0" Condition="1" Plmn="440 07"/>
@@ -228,6 +233,11 @@
     <EccEntry Ecc="186118" Category="0" Condition="1" Plmn="440 89"/>
     <EccEntry Ecc="186119" Category="0" Condition="1" Plmn="440 89"/>
 
+    <!-- Add for Japan operator due to AOSP don't set correct category -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="440 FFF"/>
+    <EccEntry Ecc="118" Category="8" Condition="1" Plmn="440 FFF"/>
+    <EccEntry Ecc="119" Category="6" Condition="1" Plmn="440 FFF"/>
+
     <!-- Add for Korea operator -->
     <EccEntry Ecc="111" Category="6" Condition="1" Plmn="450 FFF"/>
     <EccEntry Ecc="113" Category="3" Condition="1" Plmn="450 FFF"/>
@@ -362,13 +372,9 @@
     <EccEntry Ecc="122" Category="0" Condition="1" Plmn="901 FFF"/>
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="901 FFF"/>
 
-    <EccEntry Ecc="191" Category="0" Condition="2" Plmn="414 FFF"/>
-    <EccEntry Ecc="192" Category="0" Condition="2" Plmn="414 FFF"/>
-    <EccEntry Ecc="199" Category="0" Condition="2" Plmn="414 FFF"/>
-
     <EccEntry Ecc="117" Category="0" Condition="2" Plmn="515 FFF"/>
     <EccEntry Ecc="112" Category="0" Condition="2" Plmn="515 FFF"/>
-    <EccEntry Ecc="911" Category="0" Condition="2" Plmn="515 FFF"/>
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn="515 FFF"/>
 
     <EccEntry Ecc="999" Category="0" Condition="2" Plmn="852 FFF"/>
 
@@ -377,7 +383,16 @@
     <EccEntry Ecc="119" Category="0" Condition="2" Plmn="510 FFF"/>
     <EccEntry Ecc="112" Category="0" Condition="2" Plmn="510 FFF"/>
     <EccEntry Ecc="113" Category="0" Condition="2" Plmn="510 FFF"/>
-
+    <!-- HQ-150291-yefeng Add for ECC  start-->
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn="510 FFF"/>
+    <!-- HQ-150291-yefeng Add for ECC  end-->
+    <!-- HQ-206932-yefeng Add for ECC  start-->                   
+    <EccEntry Ecc="15" Category="0" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="19" Category="0" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="177" Category="0" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="150" Category="0" Condition="2" Plmn="604 FFF"/>
+    <EccEntry Ecc="190" Category="0" Condition="2" Plmn="604 FFF"/>
+    <!-- HQ-206932-yefeng Add for ECC  end-->
     <EccEntry Ecc="112" Category="0" Condition="2" Plmn="452 FFF"/>
     <EccEntry Ecc="113" Category="0" Condition="2" Plmn="452 FFF"/>
     <EccEntry Ecc="114" Category="0" Condition="2" Plmn="452 FFF"/>
@@ -403,6 +418,12 @@
     <EccEntry Ecc="191" Category="0" Condition="1" Plmn="457 FFF"/>
     <EccEntry Ecc="192" Category="0" Condition="1" Plmn="457 FFF"/>
     <EccEntry Ecc="199" Category="0" Condition="1" Plmn="457 FFF"/>
+   <!-- HQ-206738-yefeng Add for ECC  start-->
+    <EccEntry Ecc="1191" Category="0" Condition="2" Plmn="457 FFF"/>
+    <EccEntry Ecc="1190" Category="0" Condition="2" Plmn="457 FFF"/>
+    <EccEntry Ecc="1195" Category="0" Condition="2" Plmn="457 FFF"/>
+    <EccEntry Ecc="1199" Category="0" Condition="2" Plmn="457 FFF"/>
+   <!-- HQ-206738-yefeng Add for ECC  end-->
 
     <EccEntry Ecc="119" Category="0" Condition="2" Plmn="704 FFF"/>
     <EccEntry Ecc="110" Category="0" Condition="2" Plmn="704 FFF"/>
@@ -590,24 +611,56 @@
     
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="231 01"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="231 01"/>
+    <!-- J15S code for HQ-186318 by wangruirui at 20220524 start -->
+    <EccEntry Ecc="150" Category="0" Condition="2" Plmn="231 06"/>
+    <EccEntry Ecc="155" Category="0" Condition="2" Plmn="231 06"/>
+    <EccEntry Ecc="158" Category="0" Condition="2" Plmn="231 06"/>
+    <EccEntry Ecc="159" Category="0" Condition="2" Plmn="231 06"/>
+    <!-- J15S code for HQ-186318 by wangruirui at 20220524 end -->
     
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="214 03"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="214 03"/>
     
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="208 01"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="208 01"/>
+    <!-- HQ-132958-zoujiansen Add for ECC  start-->
+    <EccEntry Ecc="199" Category="0" Condition="1" Plmn="280 01"/>
+    <!-- HQ-132958-zoujiansen Add for ECC  end-->
     
+    <!-- J15S code for HQ-183154 by wangruirui at 20220309 start -->
+    <!--EccEntry Ecc="101" Category="0" Condition="2" Plmn="250 01"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="250 01"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="250 01"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="250 01"/>
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="250 02"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="250 02"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="250 02"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="250 02"/>
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="250 99"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="250 99"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="250 99"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="250 99"/>
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="250 20"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="250 20"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="250 20"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="250 20"/-->
+    <!-- J15S code for HQ-183154 by wangruirui at 20220309 end -->
+
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="334 020"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="334 020"/>
     
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="732 101"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="732 101"/>
     
+    <!-- J15S code for HQ-183286 by wangruirui at 20220304 start -->
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn="732 111"/>
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn="732 103"/> 
+    <!-- J15S code for HQ-183286 by wangruirui at 20220304 end -->  
     
-    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="716 10"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="716 10"/>
     
     <EccEntry Ecc="190" Category="0" Condition="1" Plmn="724 05"/>
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="716 10"/>
     <EccEntry Ecc="190" Category="0" Condition="1" Plmn="724 12"/>
     <EccEntry Ecc="190" Category="0" Condition="1" Plmn="724 38"/>
     
@@ -701,6 +754,15 @@
     
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="716 06"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="716 06"/>
+    <!-- J15S code for HQ-183115 by wangruirui at 20220223 start -->
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 06"/>
+    <!-- J15S code for HQ-148963 by wangruirui at 20220223 end -->
+    <!-- J15S code for HQ-182476 by huangzhi at 2022218 start -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="432 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="125" Category="0" Condition="2" Plmn="432 FFF"/>
+    <!-- J15S code for HQ-182476 by huangzhi at 2022218 end -->
     
     <EccEntry Ecc="104" Category="0" Condition="1" Plmn="748 07"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="748 07"/>
@@ -715,6 +777,11 @@
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="262 07"/>
     <EccEntry Ecc="110" Category="0" Condition="1" Plmn="262 07"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="262 07"/>
+    <!-- J15S code for HQ-186835 by wangruirui at 20220223 start -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="262 11"/>
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn="262 11"/>
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="262 11"/>
+    <!-- J15S code for HQ-186835 by wangruirui at 20220223 end -->
     
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="234 30"/>
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="234 30"/>
@@ -722,9 +789,31 @@
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="234 33"/>
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="234 33"/>
     
-    <EccEntry Ecc="117" Category="0" Condition="1" Plmn="456 11"/>
-    <EccEntry Ecc="118" Category="0" Condition="1" Plmn="456 11"/>
-    <EccEntry Ecc="119" Category="0" Condition="1" Plmn="456 11"/>
+    <!-- J15S code for HQ-149019 by yefeng at 20211021 start -->
+    <EccEntry Ecc="117" Category="0" Condition="2" Plmn="456 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="456 FFF"/>
+    <!-- J15S code for HQ-149019 by yefeng at 20211021 end -->
+    <!-- J15S code for HQ-206991 by yefeng at 20220507 start -->
+    <!-- Add for BY operator -->
+    <EccEntry Ecc="101" Category="4" Condition="1" Plmn="257 01"/>
+    <EccEntry Ecc="102" Category="1" Condition="1" Plmn="257 01"/>
+    <EccEntry Ecc="103" Category="2" Condition="1" Plmn="257 01"/>
+    <EccEntry Ecc="104" Category="8" Condition="1" Plmn="257 01"/>
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="257 01"/>
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn="257 01"/>
+    <!-- J15S code for HQ-206991 by wangruirui at 20220513 start -->
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="257 02"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="257 02"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="257 02"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="257 02"/>
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="257 02"/>
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="257 04"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="257 04"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="257 04"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="257 04"/>
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="257 04"/>
+    <!-- J15S code for HQ-206991 by wangruirui at 20220513 end -->
+    <!-- J15S code for HQ-206991 by yefeng at 20220507 END -->
     
     <EccEntry Ecc="100" Category="0" Condition="2" Plmn="202 05"/>
     <EccEntry Ecc="166" Category="0" Condition="2" Plmn="202 05"/>
@@ -743,5 +832,35 @@
     <EccEntry Ecc="191" Category="0" Condition="2" Plmn="520 05"/>
     <EccEntry Ecc="191" Category="0" Condition="2" Plmn="520 18"/>
     <EccEntry Ecc="191" Category="0" Condition="2" Plmn="520 47"/>
+
+    <!-- Add for Avantel/Colombia operator -->
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn="732 130"/>
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn="732 360"/>
+
+    <!-- j19 code for HQ-189421 by liumingyue at 2022/2/23 start -->
+    <!-- Add for Peru Entel operator -->
+    <EccEntry Ecc="105" Category="1" Condition="2" Plmn="716 17"/>
+    <!-- j19 code for HQ-189421 by liumingyue at 2022/2/23 start -->
+    <!-- J19 code for HQ-189324 by liumingyue at 2022/3/2 start -->
+    <!-- Add for Etisalat-UAE operator -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="424 02" />
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="424 02" />
+    <!-- J19 code for HQ-189324 by liumingyue at 2022/3/2 end -->
+    <!-- J15S code for HQ-206920 by wangruirui at 20220507 start -->
+    <!-- J15S code for HQ-186951  by yefeng at 2022/05/24 start -->
+    <!-- Add for Czech Vodafone operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="230 03"/>
+    <EccEntry Ecc="150" Category="0" Condition="2" Plmn="230 03"/>
+    <EccEntry Ecc="155" Category="0" Condition="2" Plmn="230 03"/>
+    <EccEntry Ecc="156" Category="0" Condition="2" Plmn="230 03"/>
+    <EccEntry Ecc="158" Category="0" Condition="2" Plmn="230 03"/>
+    <!-- J15S code for HQ-186951  by yefeng at 2022/05/24 end -->
+    <!-- Add for Etisalat-UAE operator -->
+    <EccEntry Ecc="991" Category="0" Condition="2" Plmn="424 FFF" />
+    <EccEntry Ecc="992" Category="0" Condition="2" Plmn="424 FFF" />
+    <EccEntry Ecc="995" Category="0" Condition="2" Plmn="424 FFF" />
+    <EccEntry Ecc="901" Category="0" Condition="2" Plmn="424 FFF" />
+    <EccEntry Ecc="116111" Category="0" Condition="2" Plmn="424 FFF" />
+    <!-- J15S code for HQ-206920 by wangruirui at 20220507 end -->
 
 </EccTable>

@@ -18,6 +18,8 @@
 
   <agps_setting
     ignore_si_for_e911="true"
+    agps_nvram_enable="true"
+    emergency_ext_secs="300"
   />
 
   <gnss_setting
@@ -27,7 +29,6 @@
   />
 
   <cp_setting
-    cp_auto_reset="true"
     reject_non911_nilr_enable="true"
   />
 
@@ -36,7 +37,7 @@
     supl_version="2"
     ut3="30"
     supl_ver_minor="0"
-    supl_ver_ser_ind="4"
+    supl_ver_ser_ind="2"
     force_otdoa_assist_req="true"
   />
 
